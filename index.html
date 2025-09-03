@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F.A Satisfy Wristwatches</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #f9f9f9; color: #333; line-height: 1.6; }
+    header { background: #000; color: #fff; padding: 1rem 0; text-align: center; font-size: 1.8rem; font-weight: bold; }
+    header p { margin-top: 5px; font-size: 1rem; color: #ccc; }
+    .hero { background: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30') no-repeat center/cover; height: 60vh; display: flex; justify-content: center; align-items: center; text-align: center; color: #fff; }
+    .hero h1 { font-size: 2.4rem; background: rgba(0,0,0,0.5); padding: 1rem; border-radius: 10px; }
+    .btn { display: inline-block; margin-top: 1rem; padding: 0.7rem 1.5rem; background: #25D366; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+    .btn:hover { background: #128C7E; }
+    section { padding: 3rem 1.5rem; max-width: 1200px; margin: auto; }
+    h2 { text-align: center; margin-bottom: 1rem; }
+    .about { text-align: center; margin: 3rem auto 2rem auto; padding: 0 1rem; }
+    .about p { max-width: 760px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8; }
+    .products { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem; }
+    .product { background: #fff; padding: 1rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; }
+    .product img { width: 100%; height: 260px; object-fit: cover; border-radius: 10px; }
+    .category { margin-top: 2rem; }
+    .category h3 { margin: 0.5rem 0 0.8rem; font-size: 1.2rem; text-transform: uppercase; letter-spacing: .5px; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .gallery-grid img { width: 100%; height: 260px; object-fit: cover; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); background: #e9e9e9; display: block; }
+    .gallery-grid img:hover { transform: scale(1.05); transition: 0.3s; }
+    @media (max-width: 992px) { .products { grid-template-columns: repeat(2, 1fr); } .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .products { grid-template-columns: 1fr; } .gallery-grid { grid-template-columns: 1fr; } }
+    #reviews { text-align: center; margin: 3rem auto; padding: 2rem 1rem; background: #f9f9f9; }
+    #reviews h2 { margin-bottom: 2rem; font-size: 2rem; font-weight: bold; }
+    .reviews-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+    .review { background: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); font-style: italic; }
+    .review h4 { margin-top: 1rem; font-weight: bold; color: #333; }
+    #contact { text-align: center; margin: 3rem auto; }
+    .contact-container { display: flex; justify-content: center; }
+    .contact-box { background: #fff; padding: 3rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 600px; text-align: center; width: 90%; font-size: 1.1rem; }
+    .contact-box .btn { padding: 1rem 2rem; font-size: 1.1rem; }
+    .addresses { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .box { background: #fff; padding: 20px; margin: 10px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); flex: 1 1 300px; }
+    footer { text-align: center; padding: 1rem; background: #000; color: #fff; margin-top: 30px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>F.A Satisfy Enterprises</h1>
+    <p>Luxury & Classic Timepieces You Can Trust</p>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Discover Timeless Elegance</h1>
+      <a href="https://wa.me/2348023086957?text=Hi%20I%27m%20interested%20in%20your%20wristwatches" target="_blank" class="btn">Order on WhatsApp</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>Welcome to F.A Satisfy Enterprises – where style meets trust.
+    For over 25 years, we’ve been dedicated to offering high-quality wristwatches for every style, occasion, and budget. Our name, “Satisfy,” says it all – we go the extra mile to ensure every customer leaves completely satisfied.
+    We specialize in both wholesale and retail sales, making it easy for individual buyers, resellers, and business owners to find quality timepieces at the best prices. Whether you’re looking for luxury watches, casual everyday pieces, or unique designs, we’ve got you covered.
+    At F.A Satisfy Enterprises, it’s more than just selling watches – it’s about trust, quality, and helping you make every moment count.</p>
+  </section>
+
+  <!-- Featured Collections -->
+  <section>
+    <h2>Featured Collections</h2>
+    <div class="products">
+      <div class="product"><img src="images/chain.jpg" alt="chain watches" loading="lazy"><h3>Chain Watches</h3></div>
+      <div class="product"><img src="images/leather.jpg" alt="leather watches" loading="lazy"><h3>Leather Watches</h3></div>
+      <div class="product"><img src="images/rubber.jpg" alt="rubber watches" loading="lazy"><h3>Rubber Watches</h3></div>
+      <div class="product"><img src="images/smart-watch.jpg" alt="smart watches" loading="lazy"><h3>Smart Watches</h3></div>
+      <div class="product"><img src="images/luxury.jpg" alt="luxury watches" loading="lazy"><h3>Luxury Watches</h3></div>
+      <div class="product"><img src="images/fashion.jpg" alt="fashion watches" loading="lazy"><h3>Fashion Watches</h3></div>
+    </div>
+  </section>
+
+  <!-- Full Gallery -->
+  <section id="gallery">
+    <h2>Full Gallery</h2>
+
+    <!-- Repeatable categories -->
+    <div class="category" id="chain">
+      <h3>Chain Watches</h3>
+      <div class="gallery-grid">
+        <img src="images/chain-show-1.jpg" alt="chain watch 01" loading="lazy">
+        <img src="images/chain-show-2.jpg" alt="chain watch 02" loading="lazy">
+        <img src="images/chain-show-3.jpg" alt="chain watch 03" loading="lazy">
+        <img src="images/chain-show-4.jpg" alt="chain watch 04" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Leather Watches -->
+    <div class="category" id="leather">
+      <h3>Leather Watches</h3>
+      <div class="gallery-grid">
+        <img src="images/leather-show-1.jpg" alt="leather watch 01" loading="lazy">
+        <img src="images/leather-show-2.jpg" alt="leather watch 02" loading="lazy">
+        <img src="images/leather-show-3.jpg" alt="leather watch 03" loading="lazy">
+        <img src="images/leather-show-4.jpg" alt="leather watch 04" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Rubber Watches -->
+    <div class="category" id="rubber">
+      <h3>Rubber Watches</h3>
+      <div class="gallery-grid">
+        <img src="images/rubber-show-1.jpg" alt="rubber watch 01" loading="lazy">
+        <img src="images/rubber-show-2.jpg" alt="rubber watch 02" loading="lazy">
+        <img src="images/rubber-show-3.jpg" alt="rubber watch 03" loading="lazy">
+        <img src="images/rubber-show-4.jpg" alt="rubber watch 04" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Smart Watches -->
+    <div class="category" id="smart">
+      <h3>Smart Watches</h3>
+      <div class="gallery-grid">
+        <img src="images/smart-show-1.jpg" alt="smart watch 01" loading="lazy">
+        <img src="images/smart-show-2.jpg" alt="smart watch 02" loading="lazy">
+        <img src="images/smart-show-3.jpg" alt="smart watch 03" loading="lazy">
+        <img src="images/smart-show-4.jpg" alt="smart watch 04" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Luxury Watches -->
+    <div class="category" id="luxury">
+      <h3>Luxury Watches</h3>
+      <div class="gallery-grid">
+        <img src="images/luxury-show-1.jpg" alt="luxury watch 01" loading="lazy">
+        <img src="images/luxury-show-2.jpg" alt="luxury watch 02" loading="lazy">
+        <img src="images/luxury-show-3.jpg" alt="luxury watch 03" loading="lazy">
+        <img src="images/luxury-show-4.jpg" alt="luxury watch 04" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Fashion Watches -->
+    <div class="category" id="fashion">
+      <h3>Fashion Watches</h3>
+      <div class="gallery-grid">
+        <img src="images/fashion-show-1.jpg" alt="fashion watch 01" loading="lazy">
+        <img src="images/fashion-show-2.jpg" alt="fashion watch 02" loading="lazy">
+        <img src="images/fashion-show-3.jpg" alt="fashion watch 03" loading="lazy">
+        <img src="images/fashion-show-4.jpg" alt="fashion watch 04" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Ceramic Watches -->
+    <div class="category" id="ceramic">
+      <h3>Ceramic Watches</h3>
+      <div class="gallery-grid">
+        <img src="images/ceramic-show-1.jpg" alt="ceramic watch 01" loading="lazy">
+        <img src="images/ceramic-show-2.jpg" alt="ceramic watch 02" loading="lazy">
+        <img src="images/ceramic-show-3.jpg" alt="ceramic watch 03" loading="lazy">
+        <img src="images/ceramic-show-4.jpg" alt="ceramic watch 04" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Sports Watches -->
+    <div class="category" id="sports">
+      <h3>Sports Watches</h3>
+      <div class="gallery-grid">
+        <img src="images/sports-show-1.jpg" alt="sports watch 01" loading="lazy">
+        <img src="images/sports-show-2.jpg" alt="sports watch 02" loading="lazy">
+        <img src="images/sports-show-3.jpg" alt="sports watch 03" loading="lazy">
+        <img src="images/sports-show-4.jpg" alt="sports watch 04" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Male Watches -->
+    <div class="category" id="male">
+      <h3>Male Watches</h3>
+      <div class="gallery-grid">
+        <img src="images/male-show-1.jpg" alt="male watch 01" loading="lazy">
+        <img src="images/male-show-2.jpg" alt="male watch 02" loading="lazy">
+        <img src="images/male-show-3.jpg" alt="male watch 03" loading="lazy">
+        <img src="images/male-show-4.jpg" alt="male watch 04" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Female Watches -->
+    <div class="category" id="female">
+      <h3>Female Watches</h3>
+      <div class="gallery-grid">
+        <img src="images/female-show-1.jpg" alt="female watch 01" loading="lazy">
+        <img src="images/female-show-2.jpg" alt="female watch 02" loading="lazy">
+        <img src="images/female-show-3.jpg" alt="female watch 03" loading="lazy">
+        <img src="images/female-show-4.jpg" alt="female watch 04" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Couple Watches -->
+    <div class="category" id="couple">
+      <h3>Couple Watches</h3>
+      <div class="gallery-grid">
+        <img src="images/couple-show-1.jpg" alt="couple watch 01" loading="lazy">
+        <img src="images/couple-show-2.jpg" alt="couple watch 02" loading="lazy">
+        <img src="images/couple-show-3.jpg" alt="couple watch 03" loading="lazy">
+        <img src="images/couple-show-4.jpg" alt="couple watch 04" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews">
+    <h2>What Our Customers Say</h2>
+    <div class="reviews-container">
+      <div class="review">
+        <p>"I love my new watch! The quality is amazing and delivery was super fast."</p>
+        <h4>— Aisha K.</h4>
+      </div>
+      <div class="review">
+        <p>"F.A Satisfy always delivers top-notch wristwatches. Highly recommended!"</p>
+        <h4>— John D.</h4>
+      </div>
+      <div class="review">
+        <p>"Best prices and amazing designs. I’ll definitely buy again."</p>
+        <h4>— Fatima S.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <div class="contact-box">
+        <h3>Phone Numbers</h3>
+        <p>08023086957<br>08055366642<br>08186987287<br>08036408475<br>08176556199<br>09091123293</p>
+        <h3>Email</h3>
+        <p><a href="mailto:satisfy75@yahoo.com">satisfy75@yahoo.com</a></p>
+        <a href="https://wa.me/2348023086957?text=Hi%20I%27m%20interested%20in%20your%20wristwatches" target="_blank" class="btn">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations -->
+  <section>
+    <h2>Our Locations</h2>
+    <div class="addresses">
+      <div class="box">
+        <h3>Head Office</h3>
+        <p>Rainbow Complex (Post Office)<br>41/43, Iga-Iduganran Street,<br>Lagos Island,<br>Along Oba of Lagos Palace,<br>Shop G 13/14, Ground Floor</p>
+      </div>
+      <div class="box">
+        <h3>Branch Office</h3>
+        <p>2, Obanikoro Street,<br>Shop T.S-19, Ground Floor,<br>Off Iga-Iduganran,<br>Idumota, Lagos Island,<br>Lagos.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Satisfy Wristwatches. All Rights Reserved.</p>
+    <p><a href="https://wa.me/2348023086957" style="color:#25D366;">Chat on WhatsApp</
